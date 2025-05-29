@@ -5,6 +5,38 @@
 #include <cstdlib>
 
 //===========================================================================
+// # PROBLEM: Total Unlocking of the SecureBox
+//===========================================================================
+// SecureBox is a 2D grid (y rows × x columns) of integer values:
+//     0 → fully unlocked
+//     1 → partially locked
+//     2 → fully locked
+//
+// Goal: Use toggle(x, y) operations to reach a fully unlocked state (all 0s).
+// 
+//===========================================================================
+// # SecureBox API
+//===========================================================================
+//
+// Public methods of the SecureBox class:
+//
+// void toggle(uint32_t x, uint32_t y)
+//     Increments the state of:
+//         - the cell at (x, y)
+//         - all cells in the same row
+//         - all cells in the same column
+//
+// bool isLocked()
+//     Returns true if at least one cell is non-zero (locked or partially locked).
+//     Returns false only when all cells are 0 (unlocked).
+//
+// std::vector<std::vector<uint8_t>> getState()
+//     Returns a copy of the current box state (2D grid of values).
+// 
+//================================================================================
+
+
+//===========================================================================
 // SecureBox class
 //===========================================================================
 
